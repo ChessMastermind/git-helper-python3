@@ -310,7 +310,7 @@ def show_diff(stdscr):
 def main_menu(stdscr):
     curses.curs_set(0)
     current_row = 0
-    menu_options = ["Commit & Push all", "Pull all", "Create Issue", "Advance menu"]
+    menu_options = ["Commit & Push all", "Pull all", "Create Issue", "Advanced menu"]
     while True:
         stdscr.clear()
         draw_header(stdscr)
@@ -349,7 +349,7 @@ def main_menu(stdscr):
                 result = pull_all(stdscr)
             elif selected == "Create Issue":
                 result = create_issue(stdscr)
-            elif selected == "Advance menu":
+            elif selected == "Advanced menu":
                 advanced_menu(stdscr)
                 result = True
             # Only reset the cursor to 0 if the function was fully completed.
