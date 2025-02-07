@@ -5,7 +5,7 @@ import subprocess
 import sys
 import signal
 
-# --- Helper Functions ---
+# -- Helper Functions --
 def run_command(command):
     """
     Runs a shell command and returns a tuple (output, return_code)
